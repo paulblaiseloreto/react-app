@@ -40,8 +40,22 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "@zeit/ncc": "^0.22.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.1",
     "prettier": "2.3.2",
     "semantic-release": "^17.4.4"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
