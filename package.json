@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "@zeit/ncc": "^0.22.3",
     "prettier": "2.3.2",
     "semantic-release": "^17.4.4"
   }
