@@ -1,7 +1,7 @@
 const { plugins } = require("./build/release.config");
 
 module.exports = {
-  branches: "master",
+  branches: "main",
   repositoryUrl: "https://github.com/paulblaiseloreto/react-app",
   plugins: [
     "@semantic-release/commit-anlayzer",
